@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:500px;
+            height:20px;
+       }
+
+       .container div{
+        width:500px;
+        height:200px;
+        margin:10px;
+        background-image: url('./3.jpg');
+        border:10px solid red;
+       }
+       div h1{
+        font-size:4 rem;
+        text-align:center;
+       }
+       .b1 {background-clip: border-box;}
+       .b2 {background-clip: padding-box ;}
+       .b3 {background-clip: content-box;}
+       .b4 {background-clip: text;
+              color: transparent;}
+       
+    </style>
+
+</head>
+<body>
+    <h1>background-clip</h1>
+
+    <div class="container">
+        <div class="b1">
+            <h1>Border-Box</h1>
+        </div>
+        <div class="b2">
+            <h1>padding-box</h1>
+        </div>
+        <div class="b3">
+            <h1>content-box</h1>
+        </div>
+        <div class="b4">
+            <h1>text</h1>
+        </div>
+    </div>
+</body>
+</html>

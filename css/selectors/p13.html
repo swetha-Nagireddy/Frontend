@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         a[class$="btn"] {   /* it targets only individual and second value */
+            padding:10px 12px;
+            background-color: orange;
+            color:white;
+            text-decoration:none;
+        }
+        </style>
+</head>
+<body>
+    <h1>attribute selector [attr$=value]</h1>
+
+    <div>
+        <a href="#" class="btn">link-1</a>
+        <a href="#" class="add-btn">link-2</a>
+        <a href="#" class="btn link">link-3</a>
+        <a href="#" class="login-btn">link-4</a>
+        <a href="#" class="reset btn">link-5</a>
+        <a href="#" class="btn-link">link-6</a>
+    </div>
+</body>
+</html>

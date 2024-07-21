@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+            height:200vh;
+        }
+        .container{
+            background-color:orange;
+            height:80vh;
+            padding:20px;
+            position:relative;
+        }
+        .card{
+            background-color:deepskyblue;
+            height:60vh;
+            padding:20px;
+            /* position:relative */
+        }
+        .card-header{
+            background-color:orangered;
+            height:50vh;
+            padding:20px;
+        }
+        .card-title{
+            background-color:teal;
+            padding:40px;
+            width:100px;
+            position:fixed;
+            bottom:0;
+            right:0px;
+        }
+    </style>
+</head>
+<body>
+    <h1> position</h1>
+
+    <!--  relative, absolute,fixed, sticky -->
+      <!-- top,right,bottom,left -->
+
+      <section class="container">
+        <div class="card">
+            <div class="card-holder">
+                <div class="card-title">
+                    <h3>sample content</h3>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--  
+        1. position relative
+            a. only x(left) and y(top) values can be applicable 
+            b. it will take its previous container as parent 
+        2. absolute 
+            a. consider all 4 sides to change the position 
+            b. will take bady as a reference by default, if any parent have position relative will consider that parent
+                as its ref
+            c. scrolling is possible
+        3. position fixed
+           a. consider all 4 sides to change the position 
+           b. will take bady as a reference by default, if any parent have position relative it will not consider that
+                as its ref
+           c. scrolling is not possible possible
+         -->
+</body>
+</html>

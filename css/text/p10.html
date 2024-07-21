@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b1{
+            direction: ltr;
+            unicode-bidi:bidi-override;
+        }
+        .b2{
+            direction: rtl;
+            unicode-bidi:bidi-override;  /* if we dont give override it start from left,  end at right but again start from right only */
+        }
+        .b3{
+            white-space:pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>direction and unicode-bidirection</h1>
+
+    <p class="b1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto deleniti obcaecati, dolor repellat nesciunt quidem. Repellat, ducimus sed nisi harum corporis enim repudiandae, eaque labore vero, commodi atque recusandae temporibus!</p>
+
+    <p class="b2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, debitis qui. Facere consectetur tenetur dolores repellat, voluptatibus esse! Minus voluptatibus odio minima delectus repudiandae aperiam tenetur amet molestiae mollitia est?</p>
+
+
+    <!--  pre-wrap the spaces -->
+      
+    <pre>
+        function product(a,b){
+            return a*b;
+        }
+        product(123,33);
+        
+    </pre>
+
+    <hr>
+    <p class="b3">
+        function product(a,b){
+            return a*b;
+        }
+        product(123,33);
+        
+    </p>
+</body>
+</html>

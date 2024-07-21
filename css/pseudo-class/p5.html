@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="radio"]:checked{
+             border:none;
+             outline:2px solid green;
+        }
+        input[type="chechbox"]:checked{
+            border:none;
+            outline:2px solid blue;
+        }
+        input[type="radio"]:default{
+            border:none;
+            outline:2px solid greenyellow;
+        }
+        input[type="checkbox"]:default{
+            border:none;
+            outline:2px solid greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>:checked and :default</h1>
+
+    <form action="">
+        <label for="">choose gender</label>
+        <input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" value="female" checked>female
+        <input type="radio" name="gender" value="transgender">transgender
+    </form>
+    <hr>
+
+    <form action="">
+        <label for="">choose lang</label>
+        <input type="checkbox" name="lang1" value="telugu" checked>telugu
+        <input type="checkbox" name="lang2" value="english">english
+        <input type="checkbox" name="lang3" value="kannada">kannada
+    </form>
+
+    </body>
+</html>

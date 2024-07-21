@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dialog::backdrop{
+            background-color:pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>::backdrop</h1>
+
+    <button id="show">Show Dialog</button>
+
+    <dialog id="alert">
+        <button id="cls">times</button>
+        <div class="content">
+            <h1>are you sure to delete?</h1>
+            <div>
+                <button id="yes">yes</button>
+                <button id="no">No</button>
+            </div>
+        </div>
+    </dialog>
+    <script>
+        var sh = document.getElementById('show')
+        var cl = document.getElementById('cls')
+        var al = document.getElementById('alert')
+
+        sh.onclick= function(){
+            al.showModal()
+        }
+        sh.onclick = function(){
+            al.close()
+        }
+    </script>
+</body>
+</html>

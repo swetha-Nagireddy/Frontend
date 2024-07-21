@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            background-color:grey;
+            width:300px;
+            height:100%;
+            padding:20px 13px 10px 15px;   /* order:top right bottom left */
+            border-style:dashed;
+            border-color:red;
+            border-width:10px;
+            margin:10px 12px 15px 18px;
+            /* px --> uses fixed custome sizes
+                % --> width=100% , height=content height
+                vh and vw --> one total page frame */
+        }
+    </style>
+</head>
+<body>
+    <h1>box-model</h1>
+    <!--
+         width * height (content) (we can set manually)
+         padding top,right,bottom,left
+         border all sides (width,style,color)
+         margin top,right,bottom,left
+    -->
+
+    <div class="block">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptate laudantium nostrum facilis qui illum quas non nemo corporis dolore vel fugiat accusamus facere adipisci tempore necessitatibus esse ab! Ullam.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[target]{
+            padding:10px 12px;
+            background-color:teal;
+            text-decoration:white;
+        }
+
+        /* a[target] selects for two (About and Products)
+        a[href] selects all in div */
+    </style>
+</head>
+<body>
+    <h1>attribute selectors [attr]</h1>
+
+    <!--  
+    [attr] [attr=value] [attr~=value] [attr^=value] [attr$=value] [attr*=value] 
+    -->
+
+    <div>
+        <a href="#">home</a>
+        <a href="#" target="_self">About</a>
+        <a href="#" target="_blank">Products</a>
+        <a href="#" >contact</a>
+    </div>
+</body>
+</html>

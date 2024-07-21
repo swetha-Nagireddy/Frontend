@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        .container {
+            height:100%;
+            width:100%;
+            background-color:white;
+            padding:20px;
+            display:flex;
+        }
+        .container div{
+           
+            width:100%;
+            padding:20px;
+            margin:5px;
+        }
+
+        .container div:target{
+            background-color:deepskyblue;
+            color:white;
+        }
+
+        nav a:focus{
+            background-color:orangered;
+            color:white;
+            padding:10px 12px;
+        }
+
+        input:focus{
+            background-color:orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>:focus and :target</h1>
+
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <section class="container">
+        <div id="home">
+            <h1>home section</h1>
+        </div>
+        <div id="about">
+            <h1>about section</h1>
+        </div>
+        <div id="contact">
+            <h1>contact section</h1>
+        </div>
+
+        <input type="" name="" id="">
+        
+</body>
+</html>

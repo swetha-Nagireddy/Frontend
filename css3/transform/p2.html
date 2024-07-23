@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin:auto;
+            display:flex;
+            width: 100%;
+            padding: 20px;
+            flex-direction:column;
+            align-items:center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container div{
+            width:100px;
+            height:100px;
+            padding:20px;
+            margin:10px;
+            background-color:deepskyblue;
+            transition: all 3s;
+        }
+        .b1:hover{
+            background-color:orange;
+            transform: scale(2, 3);
+        }
+        .b2:hover{
+            background-color:orangered;
+            transform: scaleX(3);
+        }
+        .b3:hover{
+            background-color:green;
+            transform: scaleY(2);
+        }
+    </style>
+</head>
+<body>
+    <h1>scale</h1>
+
+    <!-- 
+       scale means magnify 
+       in scale we specify values in times (2,3)
+       scale(x,y) ==> 2d ==> x y  scaleX(x), scaleY(y)
+                          3d ==> x y z  scaleZ(z), scale3d()-->
+  
+<section class="container">
+    <div class="b1"> sample content</div>
+    <div class="b2">scale method</div>
+    <div class="b3">magnify</div>
+</section>
+</body>
+</html>

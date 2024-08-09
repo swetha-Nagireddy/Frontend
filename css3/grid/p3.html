@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            width:100%;
+            height:100%;
+            overflow-x:hidden;
+            margin:0;
+            padding:0;
+        }
+        .container{
+            display:grid;
+            grid-template-columns:repeat(4,1fr); /* fr=frames or fractions or frame units */
+            grid-template-rows: repeat(3,200px);   /* used for width */
+            /* repeat(numberofcolumns,size of frame) */
+        }
+        .class{
+            width:100%;
+            height:100%;
+            background-color:teal;
+            border: 2px solid white;
+        }
+        /* grid-row and grid-column has child  */
+        .b1{
+            grid-column-start:1;
+            grid-column-end:4;
+            background-color:orange;
+        }
+        .b3{
+            grid-row-start:2;
+            grid-row-end:4;
+            background-color:orangered;
+        }
+        .b5{
+            grid-column-start: 3;
+            grid-column-end:5;
+            grid-row-start:2;
+            grid-row-end:4;
+            
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="class b1">1</div>
+        <div class="class b2">2</div>
+        <div class="class b3">3</div>
+        <div class="class b4">4</div>
+        <div class="class b5">5</div>
+        <div class="class b6">6</div>
+        <div class="class b7">7</div>
+        <div class="class b8">8</div>
+        <div class="class b9">9</div>
+        <div class="class b10">10</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        box-sizing:border-box;
+      }
+      body{
+        margin:0;
+        padding:0;
+        width:100%;
+        height:100vh;
+        overflow-x:hidden;
+        display:grid;
+        grid-template-areas:"tph tph tph"
+                            "ls blk rs"
+                            "ft ft ft";
+        grid-template-columns:60px 1fr 60px;
+        grid-template-rows:50px 1fr 50px;
+      }
+      .toph,.footer{
+        background-color:lightslategray;
+        height:100%;
+        color:white;
+        text-align:center;
+
+      }
+
+      .lside,.rside{
+        background-color:orange;
+        height:100%;
+        text-align:center;
+      }
+
+      .toph{
+        grid-area:tph;
+      }
+      .footer{
+        grid-area:ft;
+      }
+      .lside{
+        grid-area:ls;
+      }
+      .rside{
+        grid-area:rs;
+      }
+      .block{
+        grid-area:blk;
+      }
+    </style>
+</head>
+<body>
+    <header class="toph">
+        header section
+    </header>
+
+    
+        <aside class="lside">
+            leftside
+        </aside>
+
+        <div class="block">
+            <h3>center block</h3>
+        </div>
+
+        <aside class="rside">
+            right side
+        </aside>
+   
+    <footer class="footer">
+        footer
+    </footer>
+</body>
+</html>

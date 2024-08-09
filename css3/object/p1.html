@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     img{
+        width:150px;
+        height:100px;
+        border:2px solid gray;
+        margin: 10px 0;
+     }
+     .narrow{
+        width:100px;
+        height:150px;
+     }
+     .fill{
+        object-fit:fill;
+     }
+     .contain{
+        object-fit:contain;
+     }
+     
+     .cover{
+        object-fit:cover;
+     }
+     .none{
+        object-fit:none
+     }
+     .sd{
+        object-fit:scale-down
+     }
+    </style>
+</head>
+<body>
+    <h1>object</h1>
+    <!-- 
+    object-fit
+    object-position -->
+
+    <div class="container">
+        <h3>object-fit:fill</h3>
+        <img class="fill" src="./mdn.jpeg" alt="no image">
+        <img class="fill narrow" src="./mdn.jpeg" alt="no image">
+
+        <h3>object-fit:contain</h3>
+        <img class="contain" src="./mdn.jpeg" alt="no image">
+        <img class="contain narrow" src="./mdn.jpeg" alt="no image">
+        <h3>object-fit:cover</h3>
+        <img class="cover" src="./mdn.jpeg" alt="no image">
+        <img class="cover narrow" src="./mdn.jpeg" alt="no image">
+        <h3>object-fit:none</h3>
+        <img class="none" src="./mdn.jpeg" alt="no image">
+        <img class="none narrow" src="./mdn.jpeg" alt="no image">
+        <h3>object-fit:scale-down</h3>
+        <img class="sd" src="./mdn.jpeg" alt="no image">
+        <img class="sd narrow" src="./mdn.jpeg" alt="no image">
+     
+    </div>
+</body>
+</html>

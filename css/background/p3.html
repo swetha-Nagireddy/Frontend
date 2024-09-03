@@ -10,18 +10,19 @@
             height:100% ;
             margin:0;
             overflow-x: hidden;
+            background-image:url('./3.jpg');  /*  repeat,no-repeat,repeat-x,repeat-y */
+            background-repeat: no-repeat;
+            background-position:center center;  /* top(left, center,right), center(left,center,right),bottom(left,center,right),background-position-x,background-position-y */
+            background-size: cover;   /* cover -> full screen and  contain -> either x or y */
+            background-attachment: fixed;   /*local,scroll,fixed*/
         }
 
         .container{
             width:100%;
             height:100%;
             padding:10px;
-            background-image:url('./istockphoto-1464561797-1024x1024.jpg');  /*  repeat,no-repeat,repeat-x,repeat-y */
-            background-repeat: no-repeat;
-            background-position:center center;  /* top(left, center,right), center(left,center,right),bottom(left,center,right)background-position-x,background-position-y */
-            background-size: cover;   /* cover -> full screen and  contain -> either x or y */
-            background-attachment: fixed;  /* local, scroll, fixed */
-        }
+           
+        } 
         </style>
         </head>
         <body>
